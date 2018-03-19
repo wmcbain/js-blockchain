@@ -1,7 +1,7 @@
 {
-  "name": "es6-boilerplate",
+  "name": "js-blockchain",
   "version": "1.0.0",
-  "description": "Boilerplate for modern Javascript Node projects.",
+  "description": "Testing things out",
   "main": "index.js",
   "scripts": {
     "build": "babel src -d lib",
@@ -10,13 +10,18 @@
     "start": "npm run build && node ./lib/index.js",
     "test": "jest"
   },
-  "keywords": ["boilerplate", "es6"],
+  "keywords": [
+    "blockchain"
+  ],
   "author": "Wyatt McBain <wyatt@donut-studios.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "6.26.0",
+    "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.1",
+    "babel-preset-flow": "6.23.0",
+    "crypto-js": "3.1.9-1",
     "eslint-config-prettier": "2.9.0",
     "eslint-config-standard": "11.0.0",
     "eslint-plugin-babel": "4.1.2",
@@ -29,10 +34,16 @@
     "prettier": "1.11.1"
   },
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "/__tests__/__setup__.js"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/__setup__.js"
+    ]
   },
   "prettier": {
     "semi": false,
     "singleQuote": true
+  },
+  "dependencies": {
+    "lodash": "4.17.5"
   }
 }

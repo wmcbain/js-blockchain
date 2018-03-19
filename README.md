@@ -1,10 +1,5 @@
-# ES6 Node Boilerplate
+# JS Blockchain
 
-This is an opinionated boilerplate for ES6 Node projects with the following tools:
+Testing things out with this great article: [https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/](https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/)
 
-* [VS Code](https://code.visualstudio.com) - Editor
-* [ESLint](https://eslint.org) - Linting
-* [Prettier](https://prettier.io) - Linting
-* [Flow](https://flow.org) - Type Checking
-* [Babel](https://babeljs.io) - Builds
-* [Jest](https://facebook.github.io/jest/) - Tests
+Added some types for clear i/o
