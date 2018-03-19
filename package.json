@@ -1,0 +1,38 @@
+{
+  "name": "es6-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for modern Javascript Node projects.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "precommit": "npm run prettier && git add .",
+    "prettier": "prettier 'src/**/*.js' --write",
+    "start": "npm run build && node ./lib/index.js",
+    "test": "jest"
+  },
+  "keywords": ["boilerplate", "es6"],
+  "author": "Wyatt McBain <wyatt@donut-studios.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-standard": "3.0.1",
+    "flow-bin": "0.68.0",
+    "husky": "0.14.3",
+    "jest": "22.4.2",
+    "prettier": "1.11.1"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/__tests__/__setup__.js"]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

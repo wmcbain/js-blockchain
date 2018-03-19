@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["standard", "prettier", "prettier/standard"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "standard"],
+  "globals": {
+    "gql": true,
+    "ga": true,
+    "describe": true,
+    "it": true,
+    "test": true,
+    "expect": true,
+    "jest": true,
+    "__DEV__": true
+  },
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "space-before-function-paren": 0,
+    "import/first": 0,
+    "prettier/prettier": "error"
+  }
+}

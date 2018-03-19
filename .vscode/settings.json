@@ -1,0 +1,10 @@
+{
+  "javascript.validate.enable": false,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "flow.enabled": true,
+  "flow.useNPMPackagedFlow": true,
+  "prettier.ignorePath": ".prettierignore",
+  "cSpell.enabled": false
+}
